@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Currency Convertor</title>
+    <script src="currencyjs.js" defer></script>
+    <style>
+        .container{
+    width:600px;
+      }
+    h1{
+    font-size: 60px;
+    text-align: center;
+    }
+
+   .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     }
+
+     .col{
+        width: 45%;
+     }
+     select,input{
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 20px;
+        padding: 8px 15px;
+        font-weight: 700;
+     }
+     button{
+        width: 200px;
+        display: block;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-color:lightskyblue;
+        color: #fff;
+        cursor: pointer;
+        font-size: 22px;
+     }
+     body{
+        background-image: url("https://i.ibb.co/LZNthdz/currency.jpg");
+     }
+     .main{
+
+                border:2px solid black;
+                width:750px; 
+                 margin: 200px auto;
+                height: 350px;
+               background-color:white;
+                text-align: center;
+            }
+     </style>
+
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="row">
+            <div class="col">
+                <select class="currency">
+                    <option>Select</option>
+                </select>
+                <input type="text" id="input_currency" name="">
+            </div>
+
+            <div class="col">
+                <select class="currency">
+                    <option>Select</option>
+                </select>
+                <input type="text" id="output_currency" disabled name="">
+            </div>
+        </div>
+        <button onClick="converter()">Convert</button>
+    </div>
+</div>
+</body>
+</html>
